@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #2f3e9e;
+}
+header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px 15px 15px 15px;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+nav a {
+    color: #2f3e9e;
+    margin: 0 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 2cm;
+    max-width: 800px;
+    margin: auto;
+}
+h1 {
+    color: white;
+    margin-bottom: 1cm;
+    margin: auto;
+}
+section {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 15px;
+    margin: auto;
+    border-color: white;
+    border: solid;
+    text-align: center;
+    display: block;
+    padding: 20px;
+}
+section form {
+    padding-inline: 10px;
+}
+footer {
+    width: 100%;
+    background-color: white;
+    color: #2f3e9e;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; 
+}
+form input, form textarea, form button {
+    width: 100%; /*prend toute la largeur de la zone de formulaire */
+    padding: 10px;
+    margin-bottom: 25px; /* moins d'espace entre les champs */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* coins arrondis pour les champs */
+    font-size: 20px;
+    resize: vertical;/*permet de redimensionner verticalement */
+    box-sizing: border-box; /* garde la padding à l'intérieur de la largeur */
+}
+form button {
+    background-color: #00b8d4; /* couleur bleu clair */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; /* coins arrondis pour le bouton */
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /*prend toute la largeur de la zone de formulaire */
+    box-sizing: border-box; /* assure que la padding n'affecte pas la largeur*/
+    transition: background-color 0.3s;
+}
+form button:hover {
+    background-color: #0091a7; /* couleur bleu foncé au survol */
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.image-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+.presentation {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #2f3e9e;
+    color: white;
+    border-radius: 10px;
+}
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.texte {
+    max-width: 800px; 
+}
+
+
+
+@media (max-width: 768px) {
+    main {
+        width: 80%;
+        padding: 1cm;
+        font-size: 1cm;
+    }
+}
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    section {
+        width: 100%;
+        background-color: transparent;
+        border-color: none;
+        padding: 0;
+    }
+    section img {
+        width: 50px;
+        height: 50px;
+    }
+    .image-container {
+        flex-direction: column;
+        gap: 1.5cm;
+    }
+    .image-container img {
+        width: 80%;
+        max-width: 300px;
+    }
+}
